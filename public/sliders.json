@@ -1,0 +1,16 @@
+{
+    "sliders": [
+        {
+            "name": "Еда",
+            "startValue": 10000
+        },
+        {
+            "name": "Транспорт",
+            "startValue": 5000
+        },
+        {
+            "name": "Аренда",
+            "startValue": 30000
+        }
+    ]
+}
