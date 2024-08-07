@@ -60,10 +60,10 @@ df_vizualize = df_vizualize
 st.dataframe(df_vizualize)
 st.bar_chart(df_vizualize)
 
-total_sum = df_vizualize.sum()
-st.markdown(f'## {round(total_sum)} ₽')
+
 
 
 # Month graph
-df_month_graph = graphs.month_graph(df)
-st.bar_chart(df_month_graph)
+graphs.month_graph(df)
+
+graphs.category_graph(df)
