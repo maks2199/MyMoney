@@ -107,6 +107,13 @@ def month_category_graph(df, month_start_date, month_end_date):
 
     # Cumsum
     df_summed = df_month_pivoted.cumsum()
+
+    # FOOD summary
+    if 'caffe' not in df_summed:
+        df_summed['caffe'] = 0.0
+    if 'groceries' not in df_summed:
+        df_summed['groceries'] = 0.0
+    df_summed['FOOD'] = df_summed['caffe'] + df_summed['groceries']
     print('---Month summary table---')
     print(df_summed)
 
