@@ -6,7 +6,11 @@ from datetime import datetime
 
 import graphs
 
-df_raw = pd.read_excel('file.xls')
+st.write("https://www.tbank.ru/mybank/")
+
+file = st.file_uploader('Excel')
+
+df_raw = pd.read_excel(file)
 
 # Write to DataBase new raws
 
@@ -36,15 +40,19 @@ super_categories_map = {
     'Такси': 'transport',
     'Местный транспорт': 'transport',
     'Ж/д билеты': 'transport',
+    'Транспорт': 'transport',
     'Супермаркеты': 'groceries',
     'Фастфуд': 'caffe',
     'Рестораны': 'caffe',
+    'Caffe': 'caffe',
     'Переводы': 'transaction',
+    'Наличные': 'transaction'
 }
 df['sup_cat'] = df['category'].map(super_categories_map)
 df['sup_cat'].fillna('other', inplace=True)
 print(df.tail(10))
 
+st.dataframe(df)
 
 
 # Grouping
@@ -53,12 +61,12 @@ print(df_grouped)
 
 
 
-# Visualization
-df_vizualize = df_grouped.copy()
-df_vizualize = df_vizualize.drop('transaction')
-df_vizualize = df_vizualize 
-st.dataframe(df_vizualize)
-st.bar_chart(df_vizualize)
+# # Visualization
+# df_vizualize = df_grouped.copy()
+# df_vizualize = df_vizualize.drop('transaction')
+# df_vizualize = df_vizualize 
+# st.dataframe(df_vizualize)
+# st.bar_chart(df_vizualize)
 
 
 
@@ -67,3 +75,9 @@ st.bar_chart(df_vizualize)
 graphs.month_graph(df)
 
 graphs.category_graph(df)
+
+
+time_min, time_max = st.date_input("Date range", value=(datetime.now(), datetime.now()))
+
+
+graphs.category_graph_by_time(df, time_min, time_max)
