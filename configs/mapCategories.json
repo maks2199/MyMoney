@@ -1,0 +1,12 @@
+{
+    "Такси": "transport",
+    "Местный транспорт": "transport",
+    "Ж/д билеты": "transport",
+    "Транспорт": "transport",
+    "Супермаркеты": "groceries",
+    "Фастфуд": "caffe",
+    "Рестораны": "caffe",
+    "Caffe": "caffe",
+    "Переводы": "transaction",
+    "Наличные": "transaction"
+} 

@@ -1,0 +1,6 @@
+{
+    "p_caffe": 20000,
+    "p_groceries": 30000,
+    "p_other": 4000,
+    "p_transport": 6000
+}
