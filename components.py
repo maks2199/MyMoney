@@ -109,11 +109,11 @@ def month_category_graph(df, month_start_date, month_end_date):
     df_summed = df_month_pivoted.cumsum()
 
     # FOOD summary
-    if 'caffe' not in df_summed:
-        df_summed['caffe'] = 0.0
-    if 'groceries' not in df_summed:
-        df_summed['groceries'] = 0.0
-    df_summed['FOOD'] = df_summed['caffe'] + df_summed['groceries']
+    if '1_caffe' not in df_summed:
+        df_summed['1_caffe'] = 0.0
+    if '2_groceries' not in df_summed:
+        df_summed['2_groceries'] = 0.0
+    df_summed['FOOD'] = df_summed['1_caffe'] + df_summed['2_groceries']
     print('---Month summary table---')
     print(df_summed)
 
@@ -145,60 +145,5 @@ def month_category_graph(df, month_start_date, month_end_date):
         st.plotly_chart(fig_fact, use_container_width=True)
 
 
-# def category_graph_by_time(df, time_min, time_max):
-#     print('catgory graph')
 
-#     df = df[df['sup_cat'] != 'transaction']
-
-#     # Get only current month
-#     df_month = slice_df_by_time(df, time_min, time_max)
-
-   
-
-#     # Pivoting
-#     df_month_grouped = df_month[['date','amount','sup_cat']].groupby(by=['sup_cat','date']).sum()
-#     df_month_grouped = df_month_grouped.reset_index()
-#     print(df_month_grouped)
-#     df_month_pivoted = df_month_grouped.pivot(index='date', columns='sup_cat', values='amount')
-#     df_month_pivoted = df_month_pivoted.fillna(0)
-#     print(df_month_pivoted)
-
-#     # Cumsum
-#     df_summed = df_month_pivoted.cumsum()
-#     print(df_summed)
-
-
-
-#     # Visualize
-#     fig = px.line(df_summed)
-
-#     ## Month's first and last days
-
-
-#     plan = pd.DataFrame({
-#     'date': [time_min, time_max],
-#     'caffe_p': [0, 20000],
-#     'groceries_p': [0, 30000],
-#     'other_p': [0, 4000],
-#     'transport_p': [0, 6000],
-#     })
-
-#     plan = plan.set_index(['date'])
-#     print('plan')
-#     print(plan)
-
-
-#     fig2 = px.line(plan)
-
-#     # for d in fig2.data:
-#         # fig.add_trace(d)
-#     fig.add_traces(fig2.data)
-#     # fig.add_scatter(x=plan['date'], y=plan['caffe'], mode='lines')
-#     # fig.update_layout(title='Stock vs Prediction', xaxis_title='Date', yaxis_title='Value')
-#     fig.update_traces(patch={"line": {"dash": "dot"}}, selector=lambda x: True if '_p' in x.name else False)
-#     fig.update_traces(line=dict(width=5.0))
-
-
-
-#     st.plotly_chart(fig, use_container_width=True)
 
