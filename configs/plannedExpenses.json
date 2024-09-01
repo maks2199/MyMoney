@@ -1,8 +1,9 @@
 {
     "p_caffe": 20000,
     "p_groceries": 30000,
-    "p_transport": 6000,
+    "p_transport": 6100, 
     "p_communication": 2000,
+    "p_communal": 6000,
     "p_other": 4000,
     "p_FOOD": 50000
     

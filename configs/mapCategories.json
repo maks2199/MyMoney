@@ -14,6 +14,8 @@
     "Связь": "4_communication",
     "Мобильная связь": "4_communication",
 
+    "ЖКХ": "5_communal",
+
     "Переводы": "transaction",
     "Наличные": "transaction"
 } 
