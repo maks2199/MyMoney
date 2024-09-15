@@ -89,7 +89,7 @@ def choosed_month_category_graph(df, start_date):
     month_start, month_end = get_month_interval(start_date)
     month_category_graph(df, month_start, month_end)
 
-def month_category_graph(df, month_start_date, month_end_date):
+def month_category_graph(df, month_start_date, month_end_date): # TODO:: Отфильтровать по номеру карты
     df = df[df['sup_cat'] != 'transaction']
 
     # # Get only current month
@@ -113,6 +113,12 @@ def month_category_graph(df, month_start_date, month_end_date):
         df_summed['1_caffe'] = 0.0
     if '2_groceries' not in df_summed:
         df_summed['2_groceries'] = 0.0
+    if '3_transport' not in df_summed:
+        df_summed['3_transport'] = 0.0
+    if '4_communication' not in df_summed:
+        df_summed['4_communication'] = 0.0
+    if '5_communal' not in df_summed:
+        df_summed['5_communal'] = 0.0
     df_summed['FOOD'] = df_summed['1_caffe'] + df_summed['2_groceries']
     print('---Month summary table---')
     print(df_summed)

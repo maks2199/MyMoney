@@ -24,18 +24,22 @@ df = df[df['Статус'] == 'OK']
 df = df[df['Сумма операции'] < 0]
 df = df.reset_index()
 # Preparing table
-df = df[['Дата операции', 'Статус', 'Сумма операции', 'Категория', 'Описание']]
+df = df[['Дата операции', 'Статус', 'Сумма операции', 'Категория', 'Описание', 'Номер карты']]
 df = df.rename(columns={
     'Дата операции': 'date', 
     'Статус': 'status', 
     'Сумма операции': 'amount', 
     'Категория': 'category', 
-    'Описание': 'description'
+    'Описание': 'description',
+    'Номер карты': 'card'
 })
 df['date'] = df['date'].map(lambda d: datetime.strptime(d, '%d.%m.%Y %H:%M:%S'))
 df['date'] = df['date'].map(lambda d: d.date())
 df['amount'] = df['amount'] * -1
-
+# Filter by categories
+with open('configs/excludedCategories.json') as file:
+    excluded_categories = json.load(file)['categories']
+df = df[~df['category'].isin(excluded_categories)]
 
 # Mapping categories
 with open('configs/mapCategories.json') as file:
