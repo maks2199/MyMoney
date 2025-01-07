@@ -13,9 +13,28 @@
     
     "Связь": "4_communication",
     "Мобильная связь": "4_communication",
+    "Услуги банка": "4_communication",
 
     "ЖКХ": "5_communal",
+    "Коммуналка": "5_communal",
+
+    "Образование": "6_education",
+    "Дом и ремонт": "7_house",
+    "Одежда и обувь": "8_clothing",
+
+    "Медицина": "9_health",
+    "Аптеки": "9_health",
+
+    "Кино": "10_leisure",
+    "Развлечения": "10_leisure",
+    
+    "Подарки": "11_gifts",
+
+    "Отпуск": "12_trips",
+
+    "НКО": "13_charity",
 
     "Переводы": "transaction",
+    "Перевод между счетами": "transaction",
     "Наличные": "transaction"
 } 
