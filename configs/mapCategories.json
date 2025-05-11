@@ -1,40 +1,40 @@
 {
-    "Фастфуд": "1_caffe",
-    "Рестораны": "1_caffe",
-    "Caffe": "1_caffe",
-    
-    "Супермаркеты": "2_groceries",
+  "Фастфуд": "1_caffe",
+  "Рестораны": "1_caffe",
+  "Caffe": "1_caffe",
 
-    "Такси": "3_transport",
-    "Местный транспорт": "3_transport",
-    "Ж/д билеты": "3_transport",
-    "Транспорт": "3_transport",
-    
-    
-    "Связь": "4_communication",
-    "Мобильная связь": "4_communication",
-    "Услуги банка": "4_communication",
+  "Супермаркеты": "2_groceries",
 
-    "ЖКХ": "5_communal",
-    "Коммуналка": "5_communal",
+  "Такси": "3_transport",
+  "Местный транспорт": "3_transport",
+  "Ж/д билеты": "3_transport",
+  "Транспорт": "3_transport",
 
-    "Образование": "6_education",
-    "Дом и ремонт": "7_house",
-    "Одежда и обувь": "8_clothing",
+  "Связь": "4_communication",
+  "Мобильная связь": "4_communication",
+  "Услуги банка": "4_communication",
 
-    "Медицина": "9_health",
-    "Аптеки": "9_health",
+  "ЖКХ": "5_communal",
+  "Коммуналка": "5_communal",
 
-    "Кино": "10_leisure",
-    "Развлечения": "10_leisure",
-    
-    "Подарки": "11_gifts",
+  "Образование": "6_education",
+  "Дом и ремонт": "7_house",
+  "Одежда и обувь": "8_clothing",
 
-    "Отпуск": "12_trips",
+  "Медицина": "9_health",
+  "Аптеки": "9_health",
 
-    "НКО": "13_charity",
+  "Кино": "10_leisure",
+  "Развлечения": "10_leisure",
 
-    "Переводы": "transaction",
-    "Перевод между счетами": "transaction",
-    "Наличные": "transaction"
-} 
+  "Подарки": "11_gifts",
+
+  "Отпуск": "12_trips",
+  "Авиабилеты": "12_trips",
+
+  "НКО": "13_charity",
+
+  "Переводы": "transaction",
+  "Перевод между счетами": "transaction",
+  "Наличные": "transaction"
+}
