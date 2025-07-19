@@ -13,7 +13,7 @@ st.write("https://www.tbank.ru/mybank/")
 file = st.file_uploader("Excel")
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-df_raw = pd.read_excel(file)
+df_raw = pd.read_csv(file, on_bad_lines='skip')
 print("---Raw data table---")
 print(df_raw)
 print(df_raw.info())
