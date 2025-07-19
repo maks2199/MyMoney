@@ -113,9 +113,11 @@ def main():
             continue
         payload = row.to_dict()
         if dt in existing:
-            item_id = existing[dt]["id"]
-            print(f"🔄 Обновление {dt}")
-            update_operation(item_id, payload)
+            # item_id = existing[dt]["id"]
+            # print(f"🔄 Обновление {dt}")
+            # update_operation(item_id, payload)
+            print(f"⏩ Пропуск существующей записи {dt}")
+            continue
         else:
             print(f"➕ Добавление {dt}")
             create_operation(payload)
