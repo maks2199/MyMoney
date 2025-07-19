@@ -1,0 +1,13 @@
+database_name: Directus
+sqlalchemy_uri: postgresql+psycopg2://directus:XXXXXXXXXX@62.84.96.61:5432/directus
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: 17163c98-5470-471c-8783-5c2c9fa80a6a
+version: 1.0.0

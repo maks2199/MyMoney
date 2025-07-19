@@ -4,6 +4,8 @@ MyMoney is a personal finance analytics tool for visualizing and analyzing your 
 
 The app is working with the data from T-Bank for now, but can be expandable.
 
+![](docs/screen1.jpg)
+
 ## Features
 
 - Import transactions from Excel or CSV files
@@ -38,11 +40,3 @@ To sync transactions with Directus, configure `.env` and run:
 ```sh
 python import_to_directus.py
 ```
-
-## License
-
-MIT
-
----
-
-Feel free to expand with more details about usage, contributing, or screenshots!

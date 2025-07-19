@@ -1,0 +1,682 @@
+dashboard_title: Finances
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: b83c074a-0d22-4176-b311-494b6ab110c2
+position:
+  CHART-explore-260-1:
+    children: []
+    id: CHART-explore-260-1
+    meta:
+      chartId: 260
+      height: 50
+      sliceName: Table
+      uuid: 712ec829-0c03-4711-b18d-faced186b85d
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6WSgOhBEs3tbeJ_R-0eLm
+    type: CHART
+  CHART-explore-261-1:
+    children: []
+    id: CHART-explore-261-1
+    meta:
+      chartId: 261
+      height: 50
+      sliceName: All table
+      uuid: 95e1314c-70c2-4aa3-86ce-0750653e5b91
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-_6XZA2sPIuaTo6C69iMHk
+    type: CHART
+  CHART-explore-263-1:
+    children: []
+    id: CHART-explore-263-1
+    meta:
+      chartId: 263
+      height: 63
+      sliceName: ALL spendings by month
+      uuid: 2276d3d8-e172-4185-b941-5a11c629819b
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-tbFZ23plwmE-O8oHooLkk
+    type: CHART
+  CHART-explore-264-1:
+    children: []
+    id: CHART-explore-264-1
+    meta:
+      chartId: 264
+      height: 59
+      sliceName: BarsByCards
+      uuid: e6db36af-476b-45cf-88e0-3e88f7d05f64
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-yXE7AtsRYAAhfP3NZ5FVP
+    type: CHART
+  CHART-explore-266-1:
+    children: []
+    id: CHART-explore-266-1
+    meta:
+      chartId: 266
+      height: 43
+      sliceName: FIRE_All spendings without transactions
+      uuid: c5aaeccc-7cd6-4fd8-905f-eb072e0f1fd0
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-anMz9nouiKQ1bSHbXib3Q
+    type: CHART
+  CHART-explore-268-1:
+    children: []
+    id: CHART-explore-268-1
+    meta:
+      chartId: 268
+      height: 50
+      sliceName: FIRE Monthes of living
+      uuid: cee83ca6-28b2-4d49-9ab3-97ae92d054e5
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-og6XhGxYt8RxpPFKTABHY
+    type: CHART
+  CHART-explore-270-1:
+    children: []
+    id: CHART-explore-270-1
+    meta:
+      chartId: 270
+      height: 30
+      sliceName: SavingByAccounts
+      uuid: 81a817e4-6f49-41f0-99c9-371123c1f9d4
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Buw7wr6XkYS7z7da5UnGd
+    type: CHART
+  CHART-explore-271-1:
+    children: []
+    id: CHART-explore-271-1
+    meta:
+      chartId: 271
+      height: 61
+      sliceName: Regular month spendings
+      uuid: febcdaf6-979b-40b2-ba5d-0f09307ec06c
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-JKuo5tJFk3Ah_NLgWY0gW
+    type: CHART
+  CHART-explore-272-1:
+    children: []
+    id: CHART-explore-272-1
+    meta:
+      chartId: 272
+      height: 50
+      sliceName: Caffe and Groceries
+      uuid: 717ddc5b-e3cc-4bb7-9aa4-cf592747168a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-rG5gGym1VC8naRgegfWah
+    type: CHART
+  CHART-explore-273-1:
+    children: []
+    id: CHART-explore-273-1
+    meta:
+      chartId: 273
+      height: 50
+      sliceName: Investements
+      uuid: 988f77e6-edc6-4d60-9524-d2b3a9c60ad8
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-rG5gGym1VC8naRgegfWah
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-ZI2Nc6WR0rtikvwne23CN:
+    children: []
+    id: DIVIDER-ZI2Nc6WR0rtikvwne23CN
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-yIEBzceXQ_pAt_SS0LwP-:
+    children: []
+    id: DIVIDER-yIEBzceXQ_pAt_SS0LwP-
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - ROW-tbFZ23plwmE-O8oHooLkk
+    - ROW-JKuo5tJFk3Ah_NLgWY0gW
+    - HEADER-cOQMUOFLe6YlsgqirOS53
+    - DIVIDER-ZI2Nc6WR0rtikvwne23CN
+    - ROW-og6XhGxYt8RxpPFKTABHY
+    - ROW-Buw7wr6XkYS7z7da5UnGd
+    - ROW--dVC0ovL7Jm4R9KIFAp_e
+    - ROW-anMz9nouiKQ1bSHbXib3Q
+    - DIVIDER-yIEBzceXQ_pAt_SS0LwP-
+    - ROW-_6XZA2sPIuaTo6C69iMHk
+    - ROW-yXE7AtsRYAAhfP3NZ5FVP
+    - ROW-6WSgOhBEs3tbeJ_R-0eLm
+    - ROW-rG5gGym1VC8naRgegfWah
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER-cOQMUOFLe6YlsgqirOS53:
+    children: []
+    id: HEADER-cOQMUOFLe6YlsgqirOS53
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: MEDIUM_HEADER
+      text: FIRE
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Finances
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW--dVC0ovL7Jm4R9KIFAp_e:
+    children:
+    - CHART-explore-273-1
+    id: ROW--dVC0ovL7Jm4R9KIFAp_e
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-6WSgOhBEs3tbeJ_R-0eLm:
+    children:
+    - CHART-explore-260-1
+    id: ROW-6WSgOhBEs3tbeJ_R-0eLm
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Buw7wr6XkYS7z7da5UnGd:
+    children:
+    - CHART-explore-270-1
+    id: ROW-Buw7wr6XkYS7z7da5UnGd
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-JKuo5tJFk3Ah_NLgWY0gW:
+    children:
+    - CHART-explore-271-1
+    id: ROW-JKuo5tJFk3Ah_NLgWY0gW
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-_6XZA2sPIuaTo6C69iMHk:
+    children:
+    - CHART-explore-261-1
+    id: ROW-_6XZA2sPIuaTo6C69iMHk
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-anMz9nouiKQ1bSHbXib3Q:
+    children:
+    - CHART-explore-266-1
+    id: ROW-anMz9nouiKQ1bSHbXib3Q
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-og6XhGxYt8RxpPFKTABHY:
+    children:
+    - CHART-explore-268-1
+    id: ROW-og6XhGxYt8RxpPFKTABHY
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_WHITE
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-rG5gGym1VC8naRgegfWah:
+    children:
+    - CHART-explore-272-1
+    id: ROW-rG5gGym1VC8naRgegfWah
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-tbFZ23plwmE-O8oHooLkk:
+    children:
+    - CHART-explore-263-1
+    id: ROW-tbFZ23plwmE-O8oHooLkk
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-yXE7AtsRYAAhfP3NZ5FVP:
+    children:
+    - CHART-explore-264-1
+    id: ROW-yXE7AtsRYAAhfP3NZ5FVP
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '260':
+      id: 260
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 261
+        - 263
+        - 264
+        - 266
+        - 268
+        - 270
+        - 271
+        - 272
+        - 273
+    '261':
+      id: 261
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 260
+        - 263
+        - 264
+        - 266
+        - 268
+        - 270
+        - 271
+        - 272
+        - 273
+    '263':
+      id: 263
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 260
+        - 261
+        - 264
+        - 266
+        - 268
+        - 270
+        - 271
+        - 272
+        - 273
+    '264':
+      id: 264
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 260
+        - 261
+        - 263
+        - 266
+        - 268
+        - 270
+        - 271
+        - 272
+        - 273
+    '266':
+      id: 266
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 260
+        - 261
+        - 263
+        - 264
+        - 268
+        - 270
+        - 271
+        - 272
+        - 273
+    '268':
+      id: 268
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 260
+        - 261
+        - 263
+        - 264
+        - 266
+        - 270
+        - 271
+        - 272
+        - 273
+    '270':
+      id: 270
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 260
+        - 261
+        - 263
+        - 264
+        - 266
+        - 268
+        - 271
+        - 272
+        - 273
+    '271':
+      id: 271
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 260
+        - 261
+        - 263
+        - 264
+        - 266
+        - 268
+        - 270
+        - 272
+        - 273
+    '272':
+      id: 272
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 260
+        - 261
+        - 263
+        - 264
+        - 266
+        - 268
+        - 270
+        - 271
+        - 273
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 260
+    - 261
+    - 263
+    - 264
+    - 266
+    - 268
+    - 270
+    - 271
+    - 272
+    - 273
+  map_label_colors:
+    SUM(assets_to_spending_ratio): '#1FA8C9'
+    "\u0412\u043A\u043B\u0430\u0434": '#1FA8C9'
+    "03_\u041F\u043E\u0434\u0443\u0448\u043A\u0430": '#454E7C'
+    bitcoin: '#5AC189'
+    "\u0418\u043D\u0432\u0435\u0441\u0442\u0438\u0446\u0438\u0438": '#FF7F44'
+    "\U0001F6D2 Groceries": '#8FD3E4'
+    "\U0001F697 Transport": '#A38F79'
+    "\U0001F4F1 Communication": '#D3B3DA'
+    "\U0001F455 Clothing": '#E04355'
+    "\U0001F3E0 House": '#D1C6BC'
+    "\U0001F3D8 Communal\uFE0F": '#454E7C'
+    "\U0001F3AD Leisure": '#5AC189'
+    "\U0001F393 Education": '#3CCCCB'
+    "\U0001F381 Gifts": '#EFA1AA'
+    "\u2764\uFE0F Health": '#FF7F44'
+    "\u2615 Caffe": '#A1A6BD'
+    "\u042D\u043A\u043E\u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u042F\u043D\u0434\u0435\u043A\u0441": '#1FA8C9'
+    "\u0427\u0430\u0441\u0442\u043D\u044B\u0435 \u0443\u0441\u043B\u0443\u0433\u0438": '#FCC700'
+    "\u0426\u0438\u0444\u0440\u043E\u0432\u044B\u0435 \u0442\u043E\u0432\u0430\u0440\u044B": '#E04355'
+    "\u0426\u0432\u0435\u0442\u044B": '#A1A6BD'
+    "\u0424\u043E\u0442\u043E \u0438 \u0432\u0438\u0434\u0435\u043E": '#454E7C'
+    "\u0421\u0443\u0432\u0435\u043D\u0438\u0440\u044B": '#A38F79'
+    "\u0421\u043F\u043E\u0440\u0442\u0442\u043E\u0432\u0430\u0440\u044B": '#FDE380'
+    "\u0421\u0435\u0440\u0432\u0438\u0441": '#FF7F44'
+    "\u0420\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u0442\u043E\u0432\u0430\u0440\u044B": '#8FD3E4'
+    "\u041C\u0430\u0440\u043A\u0435\u0442\u043F\u043B\u0435\u0439\u0441\u044B": '#666666'
+    "\u041A\u0440\u0430\u0441\u043E\u0442\u0430": '#FEC0A1'
+    "\u041A\u043D\u0438\u0433\u0438": '#666666'
+    "\u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442": '#A868B7'
+    "\u0413\u043E\u0441\u0443\u0441\u043B\u0443\u0433\u0438": '#5AC189'
+    other: '#3CCCCB'
+    'NULL': '#9EE5E5'
+    SUM(ammount): '#1FA8C9'
+    "\U0001F450 Charity": '#ACE1C4'
+    "\u2708\uFE0F Trips": '#FCC700'
+    "\u0422\u0443\u0440\u0430\u0433\u0435\u043D\u0442\u0441\u0442\u0432\u0430": '#B2B2B2'
+    "\u0410\u0432\u0438\u0430\u0431\u0438\u043B\u0435\u0442\u044B": '#A868B7'
+    Black: '#1FA8C9'
+    02_Irregular: '#5AC189'
+    "04_\u041E\u0442\u043F\u0443\u0441\u043A": '#454E7C'
+    00_TT-Bank: '#666666'
+  timed_refresh_immune_slices: []
+  expanded_slices: {}
+  refresh_frequency: 0
+  color_scheme: ''
+  label_colors: {}
+  shared_label_colors:
+  - SUM(ammount)
+  - "\u042D\u043A\u043E\u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u042F\u043D\u0434\
+    \u0435\u043A\u0441"
+  - "\u0424\u043E\u0442\u043E \u0438 \u0432\u0438\u0434\u0435\u043E"
+  - "\u0413\u043E\u0441\u0443\u0441\u043B\u0443\u0433\u0438"
+  - "\u0421\u0435\u0440\u0432\u0438\u0441"
+  - "\u041A\u043D\u0438\u0433\u0438"
+  - "\u0426\u0438\u0444\u0440\u043E\u0432\u044B\u0435 \u0442\u043E\u0432\u0430\u0440\
+    \u044B"
+  - "\u0427\u0430\u0441\u0442\u043D\u044B\u0435 \u0443\u0441\u043B\u0443\u0433\u0438"
+  - "\u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442"
+  - other
+  - "\u0421\u0443\u0432\u0435\u043D\u0438\u0440\u044B"
+  - "\u0420\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u0442\u043E\u0432\u0430\
+    \u0440\u044B"
+  - "\u0426\u0432\u0435\u0442\u044B"
+  - "\U0001F450 Charity"
+  - "\u041A\u0440\u0430\u0441\u043E\u0442\u0430"
+  - "\u0422\u0443\u0440\u0430\u0433\u0435\u043D\u0442\u0441\u0442\u0432\u0430"
+  - "\U0001F381 Gifts"
+  - "\u0421\u043F\u043E\u0440\u0442\u0442\u043E\u0432\u0430\u0440\u044B"
+  - "\U0001F4F1 Communication"
+  - 'NULL'
+  - "\U0001F3E0 House"
+  - "\u041C\u0430\u0440\u043A\u0435\u0442\u043F\u043B\u0435\u0439\u0441\u044B"
+  - "\U0001F3D8 Communal\uFE0F"
+  - "\U0001F3AD Leisure"
+  - "\u2764\uFE0F Health"
+  - "\U0001F455 Clothing"
+  - "\u2708\uFE0F Trips"
+  - "\u0410\u0432\u0438\u0430\u0431\u0438\u043B\u0435\u0442\u044B"
+  - "\U0001F393 Education"
+  - "\U0001F697 Transport"
+  - "\U0001F6D2 Groceries"
+  - "\u2615 Caffe"
+  color_scheme_domain: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-BEGM9tUMw04U8pZGXgXD2
+    controlValues:
+      enableEmptyFilter: false
+    name: Only spendings
+    filterType: filter_range
+    targets:
+    - column:
+        name: ammount
+      datasetUuid: 6f0e873c-4069-47a3-9142-59597901384a
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 259
+    - 260
+    - 261
+    - 262
+    - 263
+    - 264
+    tabsInScope: []
+    adhoc_filters:
+    - expressionType: SIMPLE
+      subject: ammount
+      operator: <
+      operatorId: LESS_THAN
+      comparator: '0'
+      clause: WHERE
+      sqlExpression: null
+      isExtra: false
+      isNew: false
+      datasourceWarning: false
+      filterOptionName: filter_wwqw9zzjwf_fg69ywhynzd
+    time_range: No filter
+  - id: NATIVE_FILTER_DIVIDER-_flUmooEarZGZFJOWfR7i
+    type: DIVIDER
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    title: Excluded filters
+    description: ''
+    chartsInScope: []
+    tabsInScope: []
+  - id: NATIVE_FILTER-VfgItAK0qdpQVU_P_PaI6
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: true
+    name: Description
+    filterType: filter_select
+    targets:
+    - column:
+        name: description
+      datasetUuid: 6f0e873c-4069-47a3-9142-59597901384a
+    defaultDataMask:
+      extraFormData:
+        filters:
+        - col: description
+          op: NOT IN
+          val:
+          - "\u041F\u0435\u0440\u0435\u0432\u043E\u0434 \u043C\u0435\u0436\u0434\u0443\
+            \ \u0441\u0447\u0435\u0442\u0430\u043C\u0438"
+      filterState:
+        validateMessage: false
+        validateStatus: false
+        label: "\u041F\u0435\u0440\u0435\u0432\u043E\u0434 \u043C\u0435\u0436\u0434\
+          \u0443 \u0441\u0447\u0435\u0442\u0430\u043C\u0438 (excluded)"
+        value:
+        - "\u041F\u0435\u0440\u0435\u0432\u043E\u0434 \u043C\u0435\u0436\u0434\u0443\
+          \ \u0441\u0447\u0435\u0442\u0430\u043C\u0438"
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 259
+    - 260
+    - 261
+    - 262
+    tabsInScope: []
+  - id: NATIVE_FILTER-he50Kd69zjd9kT4yrDTFc
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: true
+    name: Category
+    filterType: filter_select
+    targets:
+    - column:
+        name: category
+      datasetUuid: 6f0e873c-4069-47a3-9142-59597901384a
+    defaultDataMask:
+      extraFormData:
+        filters:
+        - col: category
+          op: NOT IN
+          val:
+          - "\u041F\u0435\u0440\u0435\u0432\u043E\u0434 \u043C\u0435\u0436\u0434\u0443\
+            \ \u0441\u0447\u0435\u0442\u0430\u043C\u0438"
+          - transaction
+      filterState:
+        validateMessage: false
+        validateStatus: false
+        label: "\u041F\u0435\u0440\u0435\u0432\u043E\u0434 \u043C\u0435\u0436\u0434\
+          \u0443 \u0441\u0447\u0435\u0442\u0430\u043C\u0438, transaction (excluded)"
+        value:
+        - "\u041F\u0435\u0440\u0435\u0432\u043E\u0434 \u043C\u0435\u0436\u0434\u0443\
+          \ \u0441\u0447\u0435\u0442\u0430\u043C\u0438"
+        - transaction
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 259
+    - 260
+    - 261
+    - 262
+    - 263
+    tabsInScope: []
+version: 1.0.0

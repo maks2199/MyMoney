@@ -1,0 +1,92 @@
+table_name: Tinkoff avarage spendings by month
+main_dttm_col: month
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: directus
+schema: public
+sql: "WITH monthly_totals AS (\n  SELECT \n    DATE_TRUNC('month', datetime) AS month,\
+  \ \n    sum(ammount) AS total_per_month,\n    AVG(SUM(ammount)) OVER (\n      ORDER\
+  \ BY DATE_TRUNC('month', datetime)\n      ROWS BETWEEN 11 PRECEDING AND CURRENT\
+  \ ROW\n    ) rolling_avg_12m\n  FROM public.\"Tinkoff\" \n  WHERE ammount < 0 AND\
+  \ (category NOT IN ('transaction', '\u041F\u0435\u0440\u0435\u0432\u043E\u0434 \u043C\
+  \u0435\u0436\u0434\u0443 \u0441\u0447\u0435\u0442\u0430\u043C\u0438')) \n  GROUP\
+  \ BY DATE_TRUNC('month', datetime) \n  -- ORDER BY month DESC LIMIT 10000\n ),\n\
+  \ monthly_assets AS (\n  SELECT \n    DATE_TRUNC('month', date) AS month, \n   \
+  \ sum(amount) AS assets_pet_month,\n    sum(sum(amount)) OVER (\n      ORDER BY\
+  \ DATE_TRUNC('month', date)\n      ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT\
+  \ ROW\n    ) AS assets_cumsum\n  FROM public.\"assets\" \n  GROUP BY DATE_TRUNC('month',\
+  \ date) \n  -- ORDER BY month DESC LIMIT 10000\n )\n \nSELECT\n  monthly_assets.month,\n\
+  \  monthly_assets.assets_cumsum,\n  monthly_totals.rolling_avg_12m,\n  monthly_assets.assets_cumsum\
+  \ / NULLIF(-monthly_totals.rolling_avg_12m, 0) AS assets_to_spending_ratio\nFROM\
+  \ monthly_totals\nLEFT JOIN monthly_assets ON monthly_assets.month = monthly_totals.month\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 62bd512e-15ab-45a1-875f-09c676e87192
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: rolling_avg_12m
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: month
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: assets_to_spending_ratio
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: assets_cumsum
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 17163c98-5470-471c-8783-5c2c9fa80a6a

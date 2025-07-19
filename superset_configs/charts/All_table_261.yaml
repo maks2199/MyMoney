@@ -1,0 +1,50 @@
+slice_name: All table
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 57__table
+  viz_type: table
+  slice_id: 261
+  query_mode: aggregate
+  groupby:
+  - datetime
+  - category
+  - description
+  - ammount
+  - card_number
+  - card_name
+  - status
+  - category_fancy
+  temporal_columns_lookup:
+    datetime: true
+  metrics: []
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: datetime
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 24
+query_context: '{"datasource":{"id":57,"type":"table"},"force":false,"queries":[{"filters":[{"col":"datetime","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["datetime","category","description","ammount","card_number","card_name","status","category_fancy"],"metrics":[],"orderby":[],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"57__table","viz_type":"table","slice_id":261,"query_mode":"aggregate","groupby":["datetime","category","description","ammount","card_number","card_name","status","category_fancy"],"temporal_columns_lookup":{"datetime":true},"metrics":[],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"datetime"}],"order_by_cols":[],"row_limit":1000,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","extra_form_data":{},"dashboards":[24],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 95e1314c-70c2-4aa3-86ce-0750653e5b91
+version: 1.0.0
+dataset_uuid: 6f0e873c-4069-47a3-9142-59597901384a

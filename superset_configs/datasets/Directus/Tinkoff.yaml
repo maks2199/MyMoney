@@ -1,0 +1,165 @@
+table_name: Tinkoff
+main_dttm_col: datetime
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: directus
+schema: public
+sql: ''
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 6f0e873c-4069-47a3-9142-59597901384a
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: category_fancy
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "(CASE \n  WHEN category = '1_caffe' THEN '\u2615 Caffe' \n  WHEN category\
+    \ = '2_groceries' THEN '\U0001F6D2 Groceries'\n  WHEN category = '3_transport'\
+    \ THEN '\U0001F697 Transport'\n  WHEN category = '4_communication' THEN '\U0001F4F1\
+    \ Communication'\n  WHEN category = '5_communal' THEN '\U0001F3D8 Communal\uFE0F\
+    '\n  WHEN category = '6_education' THEN '\U0001F393 Education'\n  WHEN category\
+    \ = '7_house' THEN '\U0001F3E0 House'\n  WHEN category = '8_clothing' THEN '\U0001F455\
+    \ Clothing'\n  WHEN category = '9_health' THEN '\u2764\uFE0F Health'\n  WHEN category\
+    \ = '10_leisure' THEN '\U0001F3AD Leisure'\n  WHEN category = '11_gifts' THEN\
+    \ '\U0001F381 Gifts'\n  WHEN category = '12_trips' THEN '\u2708\uFE0F Trips'\n\
+    \  WHEN category = '13_charity' THEN '\U0001F450 Charity'\n  ELSE category\nEND)"
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: card_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "(CASE \n  WHEN card_number LIKE '%5457%' THEN '00_TT-Bank'\n  WHEN\
+    \ card_number LIKE '%9152%' THEN '00_TT-Bank' \n  WHEN card_number LIKE '%0479%'\
+    \ THEN '02_Irregular' \n  WHEN card_number LIKE '%9137%' THEN '02_Irregular' \n\
+    \  WHEN card_number LIKE '%9854%' THEN '04_\u041E\u0442\u043F\u0443\u0441\u043A\
+    '\n  WHEN card_number LIKE '%2942%' THEN '04_\u041E\u0442\u043F\u0443\u0441\u043A\
+    '\n  WHEN card_number LIKE '%7759%' THEN 'Black'\n  ELSE card_number\nEND)"
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: datetime
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP WITHOUT TIME ZONE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: card_number
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(255)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: category
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(255)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: status
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(255)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: currency
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(255)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: description
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(255)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: ammount
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: REAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: 17163c98-5470-471c-8783-5c2c9fa80a6a
